@@ -1,6 +1,6 @@
-function ResultModal({ result, targetTime}) {
+function ResultModal({ ref, result, targetTime}) {
   return (
-    <dialog className="result-modal">
+    <dialog ref={ref} className="result-modal">
         <h2>Your {result}</h2>
         <p>
             The target time was <strong>{targetTime} second {targetTime > 1 ? 's': ''}</strong>
